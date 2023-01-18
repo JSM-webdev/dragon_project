@@ -1,4 +1,8 @@
 
+html {
+    background-color: rgba(193, 11, 11, 0.958);
+}
+
 h1 {
     font-size: 32px;
     text-align: center;
@@ -6,43 +10,31 @@ h1 {
 
 button {
     font-size: 2rem;
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 1.5rem;  
-        
 }
 
-nav {
-    padding: 1rem;
-}
+.dragonbutton1, .dragonbutton2 
 
-/* .clicks1, .clicks2 { */
-    /* font-size: 25px; */
-/* } */
 
-main.display {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.dragon-container  {
-    display: flex;  
-    justify-content: center; 
+
+.dragon-container1 {
+    display: flex; */
+    justify-content: center; */
     margin: 3rem auto;
     text-align: center;
-    width: 250px;
+    width: 100px;
     padding: 1rem;
-        
+       
 }
 
-.fire {
-    background-color: rgb(211, 11, 11);
+.dragon-container2 {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 3rem auto;
+    text-align: center;
+    width: 100px;
+    padding: 1rem;
+    
 }
-
-.Earth {
-    background-color: rgb(71, 143, 71);
-}
-
+ 
 
  
