@@ -21,7 +21,7 @@
 const nav = document.querySelector('.dragons-list')
 const display = document.querySelector('.display')
 
-const dragonTypes = ['fire', 'water', 'earth', 'air', 'Ether']
+const dragonTypes = ['fire', 'water', 'earth', 'air', 'ether']
 
 nav.innerHTML = dragonTypes.map(type => {
     return `<button onclick="controller.spawnDragon('${type}')">${type}</button>`
@@ -32,7 +32,7 @@ const dragons = []
 function spawnDragon(type) {
     const dragon = dragonFactory(type)
     dragons.push(dragon)
-    Rerender()
+    rerender()
 }
 
 function increment(timestamp) {
@@ -69,10 +69,16 @@ function templateFactory(dragons) {
 
 const urlHelperFunc = (type) => {
     switch(type) {
-        case 'water':
-            return ''
         case 'fire':
             return ''
+        case 'water':
+            return ''
+        case 'earth':
+            return ''
+        case 'air':
+            return ''   
+        case 'ether':
+            return ''  
         default:
             return '🐉'
     }

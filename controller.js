@@ -11,7 +11,12 @@ const controller = {
     },
     updateDragon(timestamp, command) {
         switch(command) {
-            case ''
+            case 'increment':
+                model.increment(timestamp)
+                break;
+                default:
+                break;
         }
+        render()
     }
 }

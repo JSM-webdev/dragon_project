@@ -4,17 +4,18 @@ h1 {
     text-align: center;
 }
 
+nav {
+    padding: 1rem;
+}
+
 button {
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: transparent;
     color: white;
     border: none;
-    padding: 1.5rem;  
+    padding: 1.5rem; 
+    text-transform: capitalize;
         
-}
-
-nav {
-    padding: 1rem;
 }
 
 /* .clicks1, .clicks2 { */
@@ -24,31 +25,35 @@ nav {
 main.display {
     display: flex;
     flex-wrap: wrap;
-
+    gap: 2rem;
+    justify-content: center;
 }
+
 .dragon-container  {
-    display: flex;  
-    justify-content: center; 
-    margin: 3rem auto;
     text-align: center;
     width: 250px;
+    color: white;
     padding: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border: 1px solid black;
+    border-radius: 1rem;
         
 }
 
-.Fire {
+.fire {
     background-color: rgb(211, 11, 11);
 }
-.Water {
+.water {
     background-color: rgba(44, 11, 211, 0.897);
 }
-.Earth {
+.earth {
     background-color: rgb(2, 86, 36);
 }
-.Air {
+.air {
     background-color: rgb(143, 222, 236);
 }
-.Ether {
+.ether {
     background-color: rgb(173, 176, 177);
 }
 

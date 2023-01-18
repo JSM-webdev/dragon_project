@@ -1,10 +1,21 @@
-const model = []
-const dragonTypes = ['fire', 'water', 'earth', 'air']
-dragonFactory(type)
-}
+const model = {
+    dragons: [],
+    dragonTypes: ['fire', 'water', 'earth', 'air'],
 
-increment(timestamp) {
-    const target = dragons.find(dragon => dragon.timestamp === timestamp)
-    target.clicks += 1
-    rerender()
+    dragonFactory(type) {
+      return {
+        type: type,
+        clicks: 0,
+        cssClass: `.${type}`,
+        icon: '🐉', //urlHelperFunc(type),
+        timestamp: Date.now()
+    }
+},
+    addDragon(type) {
+      model.dragons.push(model.dragonFactory(type))
+},
+    increment(timestamp) {
+      target: dragons.find(dragon => dragon.timestamp === timestamp)
+      target.clicks += 1
+}
 }
