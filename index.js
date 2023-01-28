@@ -1,32 +1,11 @@
-// const dragonE1 = document.querySelector('.dragon-container')
-// const clickE1 = document.querySelector('.clicks1')
-
-// const dragonE2 = document.querySelector('.dragon-container')
-// const clickE2 = document.querySelector('.clicks2')
-
-// let clicks = 0
-
-// dragonE1.addEventListener('click', e => {
-    // clicks += 1
-    // clickE1.innerText = clicks1
-// })
-
-// let clicks2 = 0
-
-// dragonE2.addEventListener('click', e => {
-    // clicks2 += 1
-    // clickE2.innerText = clicks2
-// })
-
 const nav = document.querySelector('.dragons-list')
 const display = document.querySelector('.display')
 
-const dragonTypes = ['fire', 'water', 'earth', 'air', 'ether']
+const dragonTypes = ['fire', 'water', 'earth', 'air', 'ether', 'tree']
 
 nav.innerHTML = dragonTypes.map(type => {
     return `<button onclick="controller.spawnDragon('${type}')">${type}</button>`
     }).join('')
-
 const dragons = []
 
 function spawnDragon(type) {
@@ -67,21 +46,5 @@ function templateFactory(dragons) {
     }).join('')
 }
 
-const urlHelperFunc = (type) => {
-    switch(type) {
-        case 'fire':
-            return ''
-        case 'water':
-            return ''
-        case 'earth':
-            return ''
-        case 'air':
-            return ''   
-        case 'ether':
-            return ''  
-        default:
-            return '🐉'
-    }
-}
 
 

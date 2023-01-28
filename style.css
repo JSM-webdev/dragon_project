@@ -1,3 +1,11 @@
+button {
+    font-size: 3rem;
+    color: rgb(15, 7, 7);
+    border: 4mm ridge;
+    padding: 1.5rem; 
+    text-transform: capitalize;
+        
+}
 
 h1 {
     font-size: 32px;
@@ -6,21 +14,7 @@ h1 {
 
 nav {
     padding: 1rem;
-}
-
-button {
-    font-size: 3rem;
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 1.5rem; 
-    text-transform: capitalize;
-        
-}
-
-/* .clicks1, .clicks2 { */
-    /* font-size: 25px; */
-/* } */
+}   
 
 main.display {
     display: flex;
@@ -32,7 +26,7 @@ main.display {
 .dragon-container  {
     text-align: center;
     width: 250px;
-    color: white;
+    color: rgb(177, 173, 173);
     padding: 1rem;
     font-size: 2rem;
     text-transform: capitalize;
@@ -45,16 +39,51 @@ main.display {
     background-color: rgb(211, 11, 11);
 }
 .water {
-    background-color: rgba(44, 11, 211, 0.897);
+    background-color: rgba(16, 19, 238, 0.897);
 }
 .earth {
-    background-color: rgb(2, 86, 36);
+    background-color: rgb(78, 48, 35)
 }
 .air {
     background-color: rgb(143, 222, 236);
 }
 .ether {
-    background-color: rgb(173, 176, 177);
+    background-color: rgb(25, 25, 26);
+}
+.tree {
+    background-color: rgb(17, 62, 17);
 }
 
- 
+progress {
+    max-width: 100%;
+    height: 2rem;
+    background-color: firebrick;
+    overflow: hidden;
+    border-radius: 2rem;
+    transition: all 250ms;
+  }
+  progress::-webkit-progress-bar {
+    background-color: firebrick;
+  }
+  progress::-webkit-progress-value {
+    background-color: seagreen;
+    border-radius: 2rem;
+    border: 1px solid white;
+  }
+  progress::-moz-progress-bar {
+    background-color: firebrick;
+    border-radius: 2rem;
+  }
+  
+  aside {
+    background-color: lightgray;
+    padding: 0.5rem;
+  }
+
+  .inventory-container {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  

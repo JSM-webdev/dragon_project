@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragon Clicker</title>
-    <script src="index.js"></script>
-    <!-- <script src="model.js"></script>  -->
-    <!-- <script src="controller.js"></script> -->
-    <!-- <script src="view.js"></script>  -->
+    <title>Dragon Clicker</title>  
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav class="dragons-list"></nav>
+        <nav class="dragons-list">
+        </nav>
     </header>
+    <aside>
+        <div class="inventory-container">
+        <h3>Inventory</h3>
+        <h3>
+            +
+            <span class="modifier">0</span>
+            damage
+        </h3>
+        <h3>
+            $
+            <span class="points">0</span>
+        </h3>
+        </div>
+        <div class="inventory"></div>
+    </aside>
     <main class="display"></main>
 </body>
-
+<script src="controller.js" type="module" defer></script>
+<script src="index.js"></script> 
+<!-- <script src="model.js" defer></script>  -->
+<!-- <script src="controller.js" defer></script> -->
+<!-- <script src="view.js" defer></script>  -->
 </html>
