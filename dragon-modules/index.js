@@ -32,6 +32,7 @@ function dragonFactory(type) {
         cssClass: `.${type}`,
         icon: '🐉', //urlHelperFunc(type),
         timestamp: Date.now()
+        
     }
 }
 
