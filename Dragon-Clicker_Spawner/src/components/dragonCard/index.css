@@ -1,0 +1,34 @@
+.dragon-card {
+    border-radius: 1rem;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+  }
+  .dragon-card h1 {
+    text-transform: uppercase;
+  }
+  .dragon-card div {
+    font-size: 3rem;
+  }
+  
+  .fire {
+    background-color: rgb(211, 11, 11);
+}
+.water {
+    background-color: rgba(16, 19, 238, 0.897);
+}
+.earth {
+    background-color: rgb(78, 48, 35)
+}
+.air {
+    background-color: rgb(143, 222, 236);
+}
+.ether {
+    background-color: rgb(25, 25, 26);
+}
+.tree {
+    background-color: rgb(17, 62, 17);
+}

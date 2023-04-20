@@ -54,4 +54,5 @@ export function calculatePoints () {
 window.spawnDragon = spawnDragon
 window.updateDragon = updateDragon
 
+
 render()
