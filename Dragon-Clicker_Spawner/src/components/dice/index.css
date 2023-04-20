@@ -1,0 +1,44 @@
+.dice {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcfile25.uf.tistory.com%2Fimage%2F155AF74A4ECBB06D26AB88&f=1&nofb=1');
+  
+  }
+  .max6{
+    background: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcfile25.uf.tistory.com%2Fimage%2F155AF74A4ECBB06D26AB88&f=1&nofb=1');
+  }
+  .max20 {
+  
+  }
+  .d1 {
+    background-position: 0 0;
+  }
+  .d2 {
+    background-position: top 0 right 128px;
+  }
+  .d3 {
+    background-position: top 0 right 192px;
+  }
+  .d4 {
+    background-position: top 64px right 64px;
+  }
+  .d5 {
+    background-position: top 64px right 128px;
+  }
+  .d6 {
+    background-position: top 64px right 0;
+  }
+  
+  @keyframes rollDice {
+    to {
+      transform: rotate(0deg);
+    }
+    from {
+      transform: rotate(720deg);
+    }
+  }
+  
+  .roll {
+    animation: rollDice 1.0s ease-out 0s forwards;
+  }

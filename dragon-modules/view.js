@@ -31,8 +31,10 @@ function init() {
       }
 
   function displayTemplate(dragons) {    
+    
     const dragonsArray = dragons.map(dragon => {
-    return `<div class="${dragon.type} dragon-container">
+    
+      return `<div class="${dragon.type} dragon-container">
     <h1>${dragon.type} Dragon</h1>
     <progress max="${dragon.hp}" value="${dragon.hp - dragon.clicks}"></progress>
     <div class="clicks">${dragon.hp - dragon.clicks}</div>
