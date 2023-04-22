@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 export function Footer() {
   return <footer className="footer">
-    My footer
+    Dragon Footer
     <Counter someProps={n => n > 5 ? 'goodbye' : 'hello'} />
     </footer>
 }
@@ -21,15 +21,15 @@ const Counter = ({ someProps }) => {
   })
   useEffect(() => {
     console.log('only fires when `count` changed');
-    if(count < 50) {
-      
-    }
+    if(count < 30) {
+      setCount(count +1)
+    }   
   }, [count]);
   useEffect(() => {
     console.log('only fires when `someProps` changed');
   }, [someProps]);
   return (
-    <button style={{color: 'white'}} onClick={() => { setCount(count + 1); }}>
+    <button style={{color: 'black'}} onClick={() => { setCount(count + 1); }}>
       {someProps(count)} Count: {count} 
     </button>
   );

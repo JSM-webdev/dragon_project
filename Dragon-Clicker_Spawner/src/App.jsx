@@ -1,25 +1,23 @@
-import { useState, useEffect } from 'react'
-import { Main } from './components/main'
+import { useState } from 'react'
 import { Layout } from './components/Layout'
-import { MyContent } from './components/myContent'
 import { DragonCard } from './components/dragonCard'
 import { UserListApi } from './components/userListApi'
 import { UncontrolledForm, ControlledForm } from './components/myForms'
-//import './App.css'
+// import './App.css'
+//import { main } from './components/main'
+//import { myContent } from './components/myContent'
 
 function App() {
-  const [dragons, setDragons] = useState([{
-    type: 'fire','water','earth','air','ether','tree'(element => {
-      icon: '🐉'
-    })
-    
-  }])
+  const [dragons, setDragons] = useState ([{
+    type: 'fire',
+    icon: '🐉' 
+}])
 
   return (
     <Layout setDragons={setDragons}>
-      {/* <Main>
+        {/* <Main>
         <section id="Profile">New Profile Page</section>
-      </Main> */}
+        </Main> */}
       <main>
         {
           dragons.map((dragon, i) => {

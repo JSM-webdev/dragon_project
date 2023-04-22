@@ -21,7 +21,7 @@ function Nav (props) {
     ]
     return (
       <header className="header">
-        <h1>Responsive Grid Layout</h1>
+        <h1>Dragon Arena</h1>
         <Nav links={links}/>
       </header>
     )

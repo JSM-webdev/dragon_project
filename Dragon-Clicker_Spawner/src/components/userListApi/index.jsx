@@ -18,20 +18,13 @@ export const UserListApi = () => {
     // if(click) getData()
   }, [click])
 
-  // useEffect(() => {
-    // console.log('input', input)
-  //   state.current += 1
-  //   console.log('state', state)
-    // input.current.value = 10
-  // }, [click])
-
-  return (
+    return (
     <div>
       <h1>User List</h1>
       <input type='text' ref={input} />
       <div>{state.current}</div>
       <button 
-      style={{color: 'white'}} 
+      style={{color: 'black'}} 
       onClick={() => {setClicks(!clicks)}}>
         Fetch Users
       </button>

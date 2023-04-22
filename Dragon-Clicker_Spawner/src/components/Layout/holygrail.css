@@ -1,11 +1,15 @@
 *, *:before, *:after {
     box-sizing: border-box;
   }
+
+  html {
+    background-color: rgb(35, 156, 204);
+  }
   
   body {
     margin: 0;
     font-family: 'Open Sans', 'sans-serif';
-    background-color: #444;
+    background-color: #2e3436;
   }
   
   /* tab system */
@@ -74,7 +78,7 @@
   }
   
   .sidebar button {
-    color: white;
+    color: rgb(40, 28, 28);
     margin: 4px;
     text-transform: capitalize;
   }
