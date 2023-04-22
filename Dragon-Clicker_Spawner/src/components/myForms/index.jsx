@@ -24,7 +24,7 @@ export const UncontrolledForm = () => {
         <input id='password' type='password' name='password' placeholder='enter password' />
        </div>
        <div>
-        <button style={{color: 'white'}} type='submit'>Login</button>
+        <button style={{color: 'black'}} type='submit'>Login</button>
        </div>
     </form>
   )
@@ -62,7 +62,7 @@ export const ControlledForm = () => {
         <input onChange={handleOnChange} id='password' type='password' name='password' placeholder='enter password' />
        </div>
        <div>
-        <button style={{color: 'white'}} type='submit'>Login</button>
+        <button style={{color: 'black'}} type='submit'>Login</button>
        </div>
     </form>
   )

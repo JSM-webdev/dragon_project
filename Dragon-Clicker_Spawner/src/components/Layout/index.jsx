@@ -4,7 +4,7 @@ import { Aside } from '../aside'
 import './holygrail.css'
 
 export function Layout(props) {
-  const types = ['fire', 'water', 'air', 'earth']
+  const types = ['fire', 'water', 'air', 'earth', 'tree', 'ether']
   const handleClick = (type) => {
     props.setDragons(prevState => [...prevState, {
       type,

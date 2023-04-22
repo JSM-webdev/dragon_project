@@ -3,17 +3,19 @@ import { DragonCard } from '../dragonCard'
 import { MyDice } from '../dice'
 
 
-const EventComponent = props => {
+const EventComponent = () => {
   const [clicks, setClicks] = useState(0)
   
+  
   return (
-    <button style={{color: "white", fontSize: "3rem"}} onClick={() => (setName('bob'), setClicks(clicks+1))}>
+    // eslint-disable-next-line no-undef
+    <button style={{color: "white", fontSize: "3rem"}} onClick={() => (setName('dragonname'), setClicks(clicks+1))}>
       Clicks: {clicks}
     </button>
   )
 }
 
-export function MyContent(props) {
+export function MyContent() {
 
   return (
     <>
